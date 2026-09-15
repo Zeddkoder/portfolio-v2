@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landjeli Sewanou — Chef de Projet Digital &amp; IT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="progress-bar"></div>
+
+  <!-- ══════════════════════════════════ NAV ══════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">sewanou<span class="cursor-blink"></span></a>
+      <ul class="nav-links">
+        <li><a href="#about" data-nav>Profil</a></li>
+        <li><a href="#stack" data-nav>Stack</a></li>
+        <li><a href="#experience" data-nav>Parcours</a></li>
+        <li><a href="#education" data-nav>Formation</a></li>
+        <li><a href="#contact" data-nav>Contact</a></li>
+      </ul>
+      <span class="status-pill"><span class="pulse"></span>Disponible — CDI</span>
+      <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème">--theme dark</button>
+      <a href="CV-Landjeli-Sewanou.pdf" download="Sèwanou Landjeli.pdf" class="btn-nav">CV ↓</a>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" class="mobile-link">Profil</a>
+      <a href="#stack" class="mobile-link">Stack</a>
+      <a href="#experience" class="mobile-link">Parcours</a>
+      <a href="#education" class="mobile-link">Formation</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <a href="CV-Landjeli-Sewanou.pdf" download="Sèwanou Landjeli.pdf" class="mobile-link">Télécharger le CV ↓</a>
+      <div class="mobile-foot">
+        <span class="status-pill mobile-status"><span class="pulse"></span>Disponible — CDI</span>
+        <button class="theme-toggle" id="themeToggleMobile">--theme dark</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════ HERO ══════════════════════════════════ -->
+  <section id="hero">
+    <div class="wrap hero-grid">
+      <div class="terminal">
+        <div class="terminal-bar"><span class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></span>zsh — ~/sewanou</div>
+        <div class="terminal-body" id="termBody" aria-live="polite"></div>
+        <div class="hero-ctas" style="padding: 0 24px 26px;">
+          <a href="CV-Landjeli-Sewanou.pdf" download="Sèwanou Landjeli.pdf" class="btn-primary">↓ cv.pdf</a>
+          <a href="#experience" class="btn-outline">cat changelog.md</a>
+          <a href="mailto:sewanou.landjeli@gmail.com" class="btn-outline">mailto --send</a>
+        </div>
+      </div>
+      <div class="hero-side">
+        <div class="hero-photo">
+          <img src="photo.jpg" alt="Landjeli Sewanou" />
+        </div>
+        <div class="stat-sheet">
+          <div class="stat-row"><span class="k">experience</span><span class="v"><span data-count="3" data-suffix="+">0</span> ans</span></div>
+          <div class="stat-row"><span class="k">projets_livres</span><span class="v"><span data-count="6" data-suffix="+">0</span></span></div>
+          <div class="stat-row"><span class="k">diplome</span><span class="v">M2 EPITECH</span></div>
+          <div class="stat-row"><span class="k">base</span><span class="v">France · Bénin</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════ ABOUT / README ══════════════════════════════════ -->
+  <section id="about" class="section">
+    <div class="wrap">
+      <div class="eyebrow">PROFIL</div>
+      <div class="section-head">
+        <h2>Chef de projet à double compétence, technique et produit</h2>
+      </div>
+      <div class="tab-head"><span class="dot"></span>README.md</div>
+      <div class="doc-body reveal pre" data-reveal>
+        <p class="about-lead">
+          Chef de projet IT titulaire d'un <strong>Master 2 en informatique (EPITECH)</strong>, double compétence gestion de projet et technique.
+        </p>
+        <p>
+          <strong>Fondateur et chef de produit de <a href="https://sewanou.vercel.app/" target="_blank" rel="noopener" class="inline-link">Sewanou</a></strong>, plateforme SaaS e-commerce conduite de la vision au marché. En parallèle, je dirige <strong><a href="https://sewanou-agency.vercel.app/" target="_blank" rel="noopener" class="inline-link">Sèwanou Agency</a></strong>, où je structure et pilote des projets digitaux pour des clients indépendants — cadrage, développement, SEO et UX/UI.
+        </p>
+        <p>
+          Je conduis des projets clients de bout en bout : cadrage, chiffrage, pilotage de prestataires, recette et mise en production. Mon bagage en développement facilite le dialogue avec les équipes techniques et me permet de traduire un besoin métier en solution livrée, mesurée, documentée.
+        </p>
+        <div class="pill-row">
+          <span class="pill">leadership</span>
+          <span class="pill">agile/scrum</span>
+          <span class="pill">entrepreneuriat</span>
+          <span class="pill">tech-savvy</span>
+          <span class="pill">amoa</span>
+        </div>
+        <div class="facts-grid">
+          <div class="fact"><span class="k">localisation</span><span class="v">France · mobilité internationale</span></div>
+          <div class="fact"><span class="k">contrat recherché</span><span class="v">CDI</span></div>
+          <div class="fact"><span class="k">langues</span><span class="v">Français (natif) · Anglais (pro)</span></div>
+          <div class="fact"><span class="k">diplôme</span><span class="v">Master 2 — EPITECH Paris</span></div>
+          <div class="fact"><span class="k">email</span><a href="mailto:sewanou.landjeli@gmail.com" class="v link">sewanou.landjeli@gmail.com</a></div>
+          <div class="fact"><span class="k">linkedin</span><a href="https://www.linkedin.com/in/s%C3%A8wanou-landjeli-b2901817a" target="_blank" rel="noopener" class="v link">voir le profil →</a></div>
+        </div>
+        <a href="CV-Landjeli-Sewanou.pdf" download="Sèwanou Landjeli.pdf" class="btn-primary">↓ Télécharger le CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════ STACK / SKILLS ══════════════════════════════════ -->
+  <section id="stack" class="section">
+    <div class="wrap">
+      <div class="eyebrow">COMPÉTENCES</div>
+      <div class="section-head">
+        <h2>Le stack — méthode, outils, technique et digital</h2>
+      </div>
+      <div class="tab-head"><span class="dot"></span>stack.manifest</div>
+      <div class="doc-body manifest reveal pre" data-reveal>
+        <dl>
+          <div class="manifest-row">
+            <dt>gestion_de_projet</dt>
+            <dd>
+              <span class="chip">Agile / Scrum</span>
+              <span class="chip">Cycle en V</span>
+              <span class="chip">Cahier des charges</span>
+              <span class="chip">Spécifications fonctionnelles</span>
+              <span class="chip">User stories</span>
+              <span class="chip">Suivi de sprints</span>
+              <span class="chip">Backlog &amp; roadmap produit</span>
+              <span class="chip">Suivi budgétaire</span>
+              <span class="chip">Pilotage de prestataires</span>
+              <span class="chip">Recette</span>
+              <span class="chip">Conduite du changement</span>
+              <span class="chip">Reporting</span>
+            </dd>
+          </div>
+          <div class="manifest-row">
+            <dt>amoa_client</dt>
+            <dd>
+              <span class="chip">Recueil et analyse des besoins</span>
+              <span class="chip">Ateliers de cadrage</span>
+              <span class="chip">Comités de suivi</span>
+              <span class="chip">Formation des utilisateurs</span>
+              <span class="chip">Appui avant-vente</span>
+              <span class="chip">Propositions commerciales</span>
+            </dd>
+          </div>
+          <div class="manifest-row">
+            <dt>outils</dt>
+            <dd>
+              <span class="chip">Notion</span>
+              <span class="chip">Trello</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">Google Workspace</span>
+              <span class="chip">Google Analytics</span>
+              <span class="chip">WordPress</span>
+              <span class="chip">Figma</span>
+              <span class="chip">Canva</span>
+            </dd>
+          </div>
+          <div class="manifest-row">
+            <dt>technique</dt>
+            <dd>
+              <span class="chip">Python</span>
+              <span class="chip">PHP / Laravel</span>
+              <span class="chip">Node.js</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Langage C</span>
+              <span class="chip">SQL &amp; API REST</span>
+              <span class="chip">Tests unitaires</span>
+              <span class="chip">CI/CD</span>
+              <span class="chip">Documentation technique</span>
+            </dd>
+          </div>
+          <div class="manifest-row">
+            <dt>digital</dt>
+            <dd>
+              <span class="chip">SEO</span>
+              <span class="chip">SEA &amp; social ads</span>
+              <span class="chip">Stratégie de contenu</span>
+              <span class="chip">UX/UI</span>
+              <span class="chip">Identité de marque</span>
+              <span class="chip">Tunnel de conversion</span>
+            </dd>
+          </div>
+          <div class="manifest-row">
+            <dt>soft_skills</dt>
+            <dd>
+              <span class="chip">Organisation</span>
+              <span class="chip">Rigueur</span>
+              <span class="chip">Autonomie</span>
+              <span class="chip">Communication</span>
+              <span class="chip">Esprit analytique</span>
+              <span class="chip">Adaptabilité</span>
+              <span class="chip">Multiculturel</span>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════ CHANGELOG / EXPERIENCE ══════════════════════════════════ -->
+  <section id="experience" class="section">
+    <div class="wrap">
+      <div class="eyebrow">PARCOURS</div>
+      <div class="section-head">
+        <h2>Changelog — cinq rôles, une même colonne vertébrale</h2>
+        <p>Filtrer par nature de mission.</p>
+      </div>
+
+      <div class="filter-row" id="filterRow">
+        <button class="filter-chip active" data-filter="all">Tous</button>
+        <button class="filter-chip" data-filter="produit">Produit</button>
+        <button class="filter-chip" data-filter="it">IT</button>
+        <button class="filter-chip" data-filter="digital">Digital</button>
+        <button class="filter-chip" data-filter="dev">Dev</button>
+      </div>
+
+      <div class="changelog" id="changelog">
+
+        <article class="entry" data-cat="produit">
+          <div class="entry-top">
+            <span class="entry-version">v2025</span>
+            <span class="entry-status live">EN COURS</span>
+            <span class="entry-date">2025 — Présent</span>
+          </div>
+          <h3>Fondateur &amp; Chef de Produit</h3>
+          <p class="entry-org">Sewanou · SaaS e-commerce <a href="https://sewanou.vercel.app/" target="_blank" rel="noopener" class="entry-link">Voir le site ↗</a></p>
+          <ul>
+            <li>Plateforme SaaS permettant à un commerçant de créer sa boutique en ligne : catalogue, stocks, commandes, paiements carte &amp; Mobile Money, tableau de bord analytique</li>
+            <li>Positionnement produit, personas, roadmap et modèle d'abonnement ; dossier stratégique et plan de lancement</li>
+            <li>Pilotage du développement et des choix techniques (Next.js, Vercel, Stripe, Mobile Money) et de la stratégie d'acquisition</li>
+          </ul>
+          <div class="entry-tags"><span>SaaS</span><span>Product</span><span>Next.js</span><span>Stripe</span><span>Stratégie</span></div>
+        </article>
+
+        <article class="entry" data-cat="it">
+          <div class="entry-top">
+            <span class="entry-version">v2025.06</span>
+            <span class="entry-status archived">ARCHIVÉ</span>
+            <span class="entry-date">Juin 2025 — Avril 2026</span>
+          </div>
+          <h3>Chef de Projet IT (Stage)</h3>
+          <p class="entry-org">NetUp · Parakou, Bénin</p>
+          <ul>
+            <li>Pilotage agile de la plateforme SaaS EdTech Noteo, déployée sur 12 établissements scolaires</li>
+            <li>Recueil des besoins, spécifications fonctionnelles et user stories, priorisation et gestion du backlog produit</li>
+            <li>Suivi des sprints et animation des cérémonies Agile sous Jira et Notion ; documentation sur Notion et GitHub</li>
+            <li>Encadrement d'une équipe de 5 personnes (dev, design, QA) ; taux de rendement de 89 % ; comités de suivi et reporting client</li>
+          </ul>
+          <div class="entry-tags"><span>Stage</span><span>SaaS</span><span>Agile</span><span>EdTech</span><span>Notion</span><span>GitHub</span></div>
+        </article>
+
+        <article class="entry" data-cat="digital">
+          <div class="entry-top">
+            <span class="entry-version">v2025.04</span>
+            <span class="entry-status live">EN COURS</span>
+            <span class="entry-date">Avril 2025 — Présent</span>
+          </div>
+          <h3>Chef de Projet Digital Indépendant</h3>
+          <p class="entry-org">Sèwanou Agency <a href="https://sewanou-agency.vercel.app/" target="_blank" rel="noopener" class="entry-link">Voir le site ↗</a></p>
+          <ul>
+            <li>Structuration de services numériques : prospection, chiffrage, contractualisation, facturation et relation client</li>
+            <li>Présence digitale d'une agence de voyages agréée IATA : refonte de l'architecture du site, SEO, campagnes publicitaires, contenu et UX/UI</li>
+            <li>Direction de projet d'une plateforme de réservation multi-services : cadrage fonctionnel, tunnel de conversion, pilotage de l'équipe de développement sous-traitée</li>
+            <li>Coordination d'un réseau de prestataires indépendants et contrôle qualité des livrables</li>
+          </ul>
+          <div class="entry-tags"><span>AMOA</span><span>SEO</span><span>UX/UI</span><span>Freelance</span></div>
+        </article>
+
+        <article class="entry" data-cat="dev">
+          <div class="entry-top">
+            <span class="entry-version">v2024.12</span>
+            <span class="entry-status archived">ARCHIVÉ</span>
+            <span class="entry-date">Déc 2024 — Mars 2025</span>
+          </div>
+          <h3>Développeur / Testeur</h3>
+          <p class="entry-org">Nazif Touré</p>
+          <ul>
+            <li>Conception et architecture technique d'une application interne, de l'analyse du besoin à la mise en production</li>
+            <li>Spécifications fonctionnelles, maintenance corrective, tests unitaires et pipeline d'intégration continue</li>
+          </ul>
+          <div class="entry-tags"><span>Architecture</span><span>Tests unitaires</span><span>CI/CD</span><span>Documentation</span></div>
+        </article>
+
+        <article class="entry" data-cat="dev">
+          <div class="entry-top">
+            <span class="entry-version">v2021.10</span>
+            <span class="entry-status archived">ARCHIVÉ</span>
+            <span class="entry-date">Oct 2021 — Août 2022</span>
+          </div>
+          <h3>Développeur Automatisation</h3>
+          <p class="entry-org">MMT-Avocat · Legal Tech</p>
+          <ul>
+            <li>Outil automatisé d'audit de sites web pour un cabinet d'avocats : au moins 36 heures d'analyse manuelle économisées par audit</li>
+            <li>Legal Design appliqué aux livrables juridiques ; collaboration quotidienne avec juristes et développeurs en Scrum</li>
+          </ul>
+          <div class="entry-tags"><span>Python</span><span>Automatisation</span><span>Legal Tech</span><span>Scrum</span></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════ MILESTONES / EDUCATION ══════════════════════════════════ -->
+  <section id="education" class="section">
+    <div class="wrap">
+      <div class="eyebrow">FORMATION</div>
+      <div class="section-head">
+        <h2>Milestones</h2>
+      </div>
+      <div class="milestones">
+        <div class="milestone">
+          <span class="yr">2024—2025</span>
+          <span><span class="deg">Master 2</span><span class="spec">Expertise Informatique — EPITECH Paris</span></span>
+          <span class="tag">récent</span>
+        </div>
+        <div class="milestone">
+          <span class="yr">2023—2024</span>
+          <span><span class="deg">Master 1</span><span class="spec">IA &amp; IoT — EPITECH Barcelone</span></span>
+          <span></span>
+        </div>
+        <div class="milestone">
+          <span class="yr">2020—2023</span>
+          <span><span class="deg">Bachelor</span><span class="spec">Expertise Informatique — EPITECH Bénin</span></span>
+          <span></span>
+        </div>
+        <div class="milestone">
+          <span class="yr">2019</span>
+          <span><span class="deg">Baccalauréat</span><span class="spec">Série Scientifique — Bénin</span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="aside">
+        <span class="quote-mark">&raquo;</span>
+        <h3>Président — Association Slam Étudiante</h3>
+        <p class="org">EPITECH · 2020 — 2022</p>
+        <p>Création et direction d'une association culturelle étudiante : organisation d'événements, pilotage d'équipe et communication digitale.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════ CONTACT ══════════════════════════════════ -->
+  <section id="contact" class="section">
+    <div class="wrap">
+      <div class="eyebrow">CONTACT</div>
+      <div class="section-head">
+        <h2>Travaillons ensemble</h2>
+        <p>Disponible pour des opportunités en France et à l'international. Réponse sous 24h.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-cards">
+          <button class="c-card" id="copyEmail" data-copy="sewanou.landjeli@gmail.com" type="button">
+            <span><span class="k">email</span><span class="v">sewanou.landjeli@gmail.com</span></span>
+            <span class="copy-hint">copier</span>
+          </button>
+          <a href="tel:+33753808157" class="c-card">
+            <span><span class="k">téléphone</span><span class="v">07 53 80 81 57</span></span>
+          </a>
+          <div class="c-card" style="cursor: default;">
+            <span><span class="k">localisation</span><span class="v">France · international</span></span>
+          </div>
+          <a href="https://www.linkedin.com/in/s%C3%A8wanou-landjeli-b2901817a" target="_blank" rel="noopener" class="c-card">
+            <span><span class="k">linkedin</span><span class="v">Sèwanou Landjeli →</span></span>
+          </a>
+          <a href="CV-Landjeli-Sewanou.pdf" download="Sèwanou Landjeli.pdf" class="c-card">
+            <span><span class="k">cv</span><span class="v">Télécharger le PDF →</span></span>
+          </a>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="f-nom">nom</label>
+              <input type="text" id="f-nom" name="nom" placeholder="Votre nom" required />
+            </div>
+            <div class="form-field">
+              <label for="f-email">email</label>
+              <input type="email" id="f-email" name="email" placeholder="votre@email.com" required />
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="f-sujet">sujet</label>
+            <input type="text" id="f-sujet" name="sujet" placeholder="Objet de votre message" />
+          </div>
+          <div class="form-field">
+            <label for="f-message">message</label>
+            <textarea id="f-message" name="message" placeholder="Décrivez votre projet ou opportunité..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full" id="submitBtn">send --message</button>
+          <div class="console-line ok" id="formSuccess">✓ message envoyé — réponse sous 24h</div>
+          <div class="console-line err" id="formError">✗ erreur réseau — écrivez-moi directement par email</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════ FOOTER ══════════════════════════════════ -->
+  <footer>
+    <div class="wrap footer-inner">
+      <p>© 2026 Landjeli Sewanou — build stable</p>
+      <div class="footer-links">
+        <a href="mailto:sewanou.landjeli@gmail.com" class="footer-icon" title="Email">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/s%C3%A8wanou-landjeli-b2901817a" target="_blank" rel="noopener" class="footer-icon" title="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="CV-Landjeli-Sewanou.pdf" download="Sèwanou Landjeli.pdf" class="footer-icon" title="Télécharger le CV">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
